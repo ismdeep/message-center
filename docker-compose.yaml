@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_DATABASE: db_message_center
+      MYSQL_ROOT_PASSWORD: message-center-123456
+    ports:
+      - '3306:3306'
+    restart: always
